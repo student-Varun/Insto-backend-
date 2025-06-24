@@ -111,7 +111,7 @@ exports.forgotPassword = async (req, res) => {
     user.resetPasswordExpires = expires;
     await user.save();
 
-    const link = `http://localhost:5173/reset-password?token=${token}`;
+    const link = `https://insto-frontend-gsbr.vercel.app/reset-password?token=${token}`;
     await sendEmail(user.email, 'Reset Your Password', `
       <p>Hello ${user.firstName},</p>
       <p>Click below to reset your password:</p>
