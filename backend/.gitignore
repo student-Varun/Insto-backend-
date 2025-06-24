@@ -1,0 +1,90 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory
+coverage/
+
+# Optional npm cache directory
+.npm/
+
+# dotenv environment variables
+.env
+.env.*.local
+
+# Parcel/Vite build output
+dist/
+build/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# IDEs and editors
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# React/Vite specific
+*.local
+.cache/
+.eslintcache
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing
+coverage/
+jest-*
+
+# Image previews, temp uploads, or user files
+uploads/
+public/uploads/
+
+# Custom log directories
+/logs/
+*.log
+
+# Backend logs or tmp files
+*.sqlite
+*.bak
+*.tmp
+
+# Git hooks and system files
+.husky/
+.githooks/
+
+# Windows-specific
+desktop.ini
+
+# Mac-specific
+.AppleDouble
+.LSOverride
+
+# Backup files
+*.swp
+*.bak
+*.tmp
+*.orig
+*.save
+*.rej
+*.sublime-workspace
+*.sublime-project
