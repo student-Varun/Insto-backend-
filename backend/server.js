@@ -14,9 +14,20 @@ const app = express();
 // MongoDB Connection
 connectDb();
 
-// CORS Configuration
+const allowedOrigins = [
+  'https://insto-frontend-gsbr.vercel.app',
+  'http://localhost:5173'
+];
+
 app.use(cors({
-  origin: 'https://insto-frontend-gsbr.vercel.app',
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps or curl requests)
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
   credentials: true,
 }));
