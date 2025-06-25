@@ -16,7 +16,7 @@ connectDb();
 
 // CORS Configuration
 app.use(cors({
-  origin: 'https://insto-frontend-3n21.vercel.app',
+  origin: 'https://insto-frontend-gsbr.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
   credentials: true,
 }));
